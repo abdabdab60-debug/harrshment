@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeGuard Pro - Advanced Harassment Detection & Safety System</title>
+    <meta name="description" content="Protect yourself with AI-powered harassment detection, real-time monitoring, and emergency response features.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1><i class="fas fa-shield-alt"></i> SafeGuard Pro</h1>
+                    <p class="hero-subtitle">Advanced Harassment Detection & Safety System</p>
+                    <p class="hero-description">Protect yourself with AI-powered harassment detection, real-time monitoring, and emergency response features. Your safety is our priority.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="showDemo()">
+                            <i class="fas fa-play"></i>
+                            Try Demo
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToFeatures()">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="safety-illustration">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="protection-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Comprehensive Protection Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Message Monitoring</h3>
+                    <p>AI-powered analysis of messages to detect harassment patterns and threats in real-time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3>Voice Protection</h3>
+                    <p>Monitor voice calls for harassment and automatically record evidence when threats are detected.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Emergency Response</h3>
+                    <p>Instant connection to police and emergency contacts with location sharing for rapid response.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Support</h3>
+                    <p>24/7 AI assistant providing emotional support and guidance during difficult situations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Privacy Protection</h3>
+                    <p>End-to-end encryption and anonymous processing to keep your data secure and private.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Multi-Language</h3>
+                    <p>Support for 10+ Indian languages including Hindi, Bengali, Tamil, Telugu, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How SafeGuard Pro Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Register & Setup</h3>
+                        <p>Create your secure account and configure emergency contacts and preferences.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>AI Monitoring</h3>
+                        <p>Our AI continuously monitors your messages and calls for harassment patterns.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Instant Alerts</h3>
+                        <p>Receive immediate notifications when threats are detected with evidence collection.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Emergency Response</h3>
+                        <p>Automatic alerts to authorities and emergency contacts for your protection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section" style="display: none;">
+        <div class="container">
+            <div class="demo-header">
+                <h2>SafeGuard Pro Demo</h2>
+                <button class="close-demo" onclick="hideDemo()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Demo Dashboard -->
+            <div class="demo-dashboard">
+                <div class="demo-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Protection Status</h3>
+                            <p class="status active">Active</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Messages Monitored</h3>
+                            <p class="stat-number" id="demoMessages">1,247</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h3>Threats Blocked</h3>
+                            <p class="stat-number" id="demoThreats">23</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-features">
+                    <div class="demo-feature">
+                        <h4><i class="fas fa-comments"></i> Message Analysis</h4>
+                        <div class="demo-message">
+                            <div class="message-item threat">
+                                <span class="sender">Unknown Contact</span>
+                                <span class="content">"You're worthless and should..."</span>
+                                <span class="threat-level high">High Threat</span>
+                            </div>
+                            <div class="message-item safe">
+                                <span class="sender">Friend</span>
+                                <span class="content">"Hey, how are you doing?"</span>
+                                <span class="threat-level safe">Safe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-feature">
+                        <h4><i class="fas fa-phone"></i> Emergency Contacts</h4>
+                        <div class="emergency-buttons">
+                            <button class="emergency-btn police">
+                                <i class="fas fa-phone"></i>
+                                Call Police (100)
+                            </button>
+                            <button class="emergency-btn contact">
+                                <i class="fas fa-user-friends"></i>
+                                Emergency Contact
+                            </button>
+                        </div>
+                        <div id="emergencyContactsList" class="contacts-list"></div>
+                    </div>
+
+                    <div class="demo-feature">
+                        <h4><i class="fas fa-mobile-alt"></i> Real Device Integration</h4>
+                        <div class="device-info">
+                            <div class="info-item">
+                                <span>Location:</span>
+                                <span id="currentLocation">Getting location...</span>
+                            </div>
+                            <div class="info-item">
+                                <span>Real Contacts:</span>
+                                <span id="realContactsCount">0</span>
+                            </div>
+                            <div class="control-buttons">
+                                <button onclick="startRealMonitoring()" class="btn-small btn-success">
+                                    <i class="fas fa-play"></i> Start Real Monitoring
+                                </button>
+                                <button onclick="stopRealMonitoring()" class="btn-small btn-danger">
+                                    <i class="fas fa-stop"></i> Stop Monitoring
+                                </button>
+                                <button onclick="syncRealContacts()" class="btn-small btn-info">
+                                    <i class="fas fa-sync"></i> Sync Contacts
+                                </button>
+                                <button onclick="getCurrentLocation()" class="btn-small btn-warning">
+                                    <i class="fas fa-map-marker-alt"></i> Get Location
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-feature">
+                        <h4><i class="fas fa-cogs"></i> Device Capabilities</h4>
+                        <div id="deviceCapabilities" class="capabilities-grid">
+                            <!-- Will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+        <div class="container">
+            <h2>Making a Difference</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">Users Protected</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">1M+</div>
+                    <div class="stat-label">Messages Analyzed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.8%</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Protection</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Resources -->
+    <section class="support-resources">
+        <div class="container">
+            <h2>Support Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Emergency Helplines</h3>
+                    <ul>
+                        <li>Women Helpline: 1091</li>
+                        <li>Police: 100</li>
+                        <li>Cyber Crime: 1930</li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Online Resources</h3>
+                    <ul>
+                        <li>Cyber Crime Portal</li>
+                        <li>Legal Aid Services</li>
+                        <li>Counseling Support</li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Mental Health</h3>
+                    <ul>
+                        <li>24/7 Counseling</li>
+                        <li>Support Groups</li>
+                        <li>Crisis Intervention</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shield-alt"></i> SafeGuard Pro</h3>
+                    <p>Protecting individuals through advanced AI technology and comprehensive safety features.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Message Monitoring</li>
+                        <li>Voice Protection</li>
+                        <li>Emergency Response</li>
+                        <li>AI Support</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Service</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency</h4>
+                    <ul>
+                        <li>Police: 100</li>
+                        <li>Women Helpline: 1091</li>
+                        <li>Cyber Crime: 1930</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SafeGuard Pro. All rights reserved. Your safety is our mission.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <h2>SafeGuard Pro Registration</h2>
+            <p>Register to enable real device protection</p>
+            <form id="registrationForm">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="tel" name="emergencyContact" placeholder="Emergency Contact" required>
+                <button type="submit">Register & Enable Protection</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

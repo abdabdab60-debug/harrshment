@@ -1,0 +1,20 @@
+{
+  "name": "safeguard-pro-website",
+  "version": "1.0.0",
+  "description": "SafeGuard Pro - Advanced Harassment Detection & Safety System",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s . -l 3000",
+    "build": "echo 'Static site - no build needed'",
+    "dev": "serve -s . -l 3000"
+  },
+  "keywords": ["harassment-detection", "safety", "security", "ai", "protection"],
+  "author": "SafeGuard Pro Team",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
